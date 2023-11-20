@@ -250,7 +250,6 @@ nav .nav_links a:hover:before{
   .about-us{
     width: 100%;
     padding-top: 6.25rem;
-    background-color: #fff;
  
   }
   .about-us-section{
@@ -259,14 +258,10 @@ nav .nav_links a:hover:before{
   }
   .about-us-section h1{
     font-size: 36px;
-    -webkit-text-stroke-color:#0d0d0d;
-    color: transparent;
-    -webkit-text-stroke-width: 0.125rem;
   }
   .about-us-section p{
     font-size: 17px;
     margin-bottom: 0px;
-    color: #0d0d0d;
   }
   .container{
     padding: 0px;
@@ -282,7 +277,7 @@ nav .nav_links a:hover:before{
   .about-content p{
     padding: 0px;
     font-size: 16px;
-    color: #0d0d0d;
+    
   }
 
 }
