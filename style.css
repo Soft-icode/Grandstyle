@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500&family=Moon+Dance&family=Playfair+Display:ital,wght@0,400;0,500;1,600;1,700&family=Roboto&family=Roboto+Slab&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500&family=Moon+Dance&family=Playfair+Display:ital,wght@0,400;0,500;1,600;1,700&family=Roboto+Condensed:wght@300;400;500&family=Rubik+Moonrocks&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -136,7 +136,7 @@ nav .nav_links a:hover:before{
   .about-us{
     width: 100%;
     padding-top: 6.25rem;
-    background-color: #222222;
+    background-color: #f7f4f4;
   }
   .about-us-section{
     width: 90%;
@@ -150,7 +150,7 @@ nav .nav_links a:hover:before{
   .about-us-section h1{
     margin-bottom: 20px;
     text-transform: uppercase;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: #0f0f0f;
     color: transparent;
     -webkit-text-stroke-width: 0.125rem;
     font-weight: 700;
@@ -160,24 +160,22 @@ nav .nav_links a:hover:before{
     content: '';
     position: absolute;
     width: 100%;
-    height: 8px;
+    height: 3px;
     display: block;
     margin: 0 auto;
-    background-color: #3214d9;
+    background-color: #14d914;
   }
   .about-us-section p{
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
-    color: #fff;
+    color: #141414;
     margin-bottom: 35px;
+    font-family: 'Roboto Condensed', sans-serif;
   }
   .container{
     width: 90%;
     margin: 0 auto;
-    color: #fff;
-    opacity: 0;
-    animation: slidebottom 2s ease forwards;
-    transition-delay: 3s;
+    color: #111111;
   }
     .about{
         display: flex;
@@ -200,21 +198,34 @@ nav .nav_links a:hover:before{
   }
   .about-content{
     flex: 1;
-    font-family: 'Bebas Neue', sans-serif;
   }
   .about-content h1{
-    color: #14d91b;
+    color: #080808;
     padding-top: 16px;
-    font-size: 23px;
+    font-size: 30px;
     margin-bottom: 15px;
-    font-weight:900;
+    font-family: 'Rubik Moonrocks', sans-serif;
+    font-weight:500;
   }
-  .about-content p{
-    padding-right: 18px;
+  .about-content ul li{
+    font-weight: 600;
+    list-style-type: none;
+    font-family: 'Playfair Display', serif;;
+    padding-top: 10px;
+    text-transform: uppercase;
+  }
+  .about-content ul li i{
+    padding-right: 5px;
+  }
+  .about-content ul p{
+    text-transform: capitalize;
+    padding-top: 15px;
+    padding-right: 25px;
     line-height: 1.5;
     font-size: 1.125rem;
-    text-transform: uppercase;
-    font-weight: 500;
+    text-transform: lowercase;
+    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
   }
   .about-content .read-more{
     display: inline-block;
@@ -250,6 +261,7 @@ nav .nav_links a:hover:before{
   .about-us{
     width: 100%;
     padding-top: 6.25rem;
+    background-color: #0f0f0f;
  
   }
   .about-us-section{
@@ -258,10 +270,15 @@ nav .nav_links a:hover:before{
   }
   .about-us-section h1{
     font-size: 36px;
+    -webkit-text-stroke-color:#fff;
+    color: transparent;
+    -webkit-text-stroke-width: 0.125rem;
   }
   .about-us-section p{
+    font-weight: 400;
     font-size: 17px;
     margin-bottom: 0px;
+    color: #fff;
   }
   .container{
     padding: 0px;
@@ -274,12 +291,21 @@ nav .nav_links a:hover:before{
     margin-right: 0px;
     margin-bottom: 20px;
   }
-  .about-content p{
+  .about-content h1{
+    color: #fff;
+  }
+  .about-content ul p{
     padding: 0px;
     font-size: 16px;
-    
+    color: #fff;
   }
-
+  .about-content ul li{
+    font-weight: 400;
+  }
+  .about-content ul i,li{
+    padding-right: 3px;
+    color: #fff;
+  }
 }
 
 @keyframes slidetop{
