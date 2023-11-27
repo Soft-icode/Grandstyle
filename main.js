@@ -5,6 +5,10 @@ const swiper = new Swiper('.swiper', {
   },
   grabCursor: true,
   loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
 
 document.addEventListener('scroll', () => {
