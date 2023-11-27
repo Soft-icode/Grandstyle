@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home -Grandstyle</title>
-    <link rel="icon" type="image/x-icon" href="#" />
+    <link rel="stylesheet" href="core-styles.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      href="public/fonts/space-grotesk-v16-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -14,6 +21,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -39,7 +50,15 @@
           <a href="./Discography/discography.html">Discography</a>
           <a href="#contactUs">Contact Us</a>
         </div>
+        <div class="mobile-menu-btn">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
       </nav>
+      <div class="swiper-nav">
+        <a class="swiper-button-prev"> </a>
+        <a class="swiper-button-next"> </a>
+      </div>
       <section class="front-text">
         <p>...Get The Best Of Media, Recording Studio Services In Nigeria</p>
         <h1>A Record Label And Media Company</h1>
@@ -51,10 +70,32 @@
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="public/assets/Background-3.jpeg" alt="" />
+            <img
+              decoding="async"
+              src="public/assets/Background-3.webp"
+              alt="Person Recording In A Studio"
+              srcset="
+                public/assets/Background-3-600.webp   600w,
+                public/assets/Background-3-1150.webp 1150w,
+                public/assets/Background-3-1510.webp 1510w,
+                public/assets/Background-3-1800.webp 1800w,
+                public/assets/Background-3-2048.webp 2048w
+              "
+            />
           </div>
           <div class="swiper-slide">
-            <img src="public/assets/Background-1.jpeg" alt="" />
+            <img
+              src="public/assets/Background-1.webp"
+              decoding="async"
+              alt="Recording Studio In Nigeria"
+              srcset="
+                public/assets/Background-1-600.webp   600w,
+                public/assets/Background-1-1150.webp 1150w,
+                public/assets/Background-1-1510.webp 1510w,
+                public/assets/Background-1-1800.webp 1800w,
+                public/assets/Background-1-2048.webp 2048w
+              "
+            />
           </div>
         </div>
       </div>
