@@ -341,6 +341,7 @@ nav .nav_icons,
 
   .swiper-nav {
     top: 20%;
+    display: none;
   }
 
   .front-text {
