@@ -339,7 +339,7 @@ nav .nav_icons,
     font-size: 2rem;
   }
 
-  .swiper-nav {
+  .swiper-nav >* {
     top: 20%;
     display: none;
   }
