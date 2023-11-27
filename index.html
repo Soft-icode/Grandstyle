@@ -40,24 +40,36 @@
   <body>
     <header>
       <nav id="nav">
-        <a href="/" id="logo">
-          <h3>Grandstyle</h3>
-        </a>
+        <div class="mobile-nav-wrapper">
+          <a href="/" id="logo">
+            <h3>Grandstyle</h3>
+          </a>
+
+          <div class="mobile-menu-btn">
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
         <div class="nav-links">
           <a href="/" class="active">Home</a>
-          <a href="#about-us">About Us</a>
-          <a href="./Services/services.html">Services</a>
-          <a href="./Discography/discography.html">Discography</a>
-          <a href="#contactUs">Contact Us</a>
-        </div>
-        <div class="mobile-menu-btn">
-          <i class="fa-solid fa-bars"></i>
-          <i class="fa-solid fa-xmark"></i>
+          <a href="#about-us" class="nav-link">About Us</a>
+          <a href="./Services/services.html" class="nav-link">Services</a>
+          <a href="./Discography/discography.html" class="nav-link"
+            >Discography</a
+          >
+          <a href="#contactUs" class="nav-link">Contact Us</a>
         </div>
       </nav>
       <div class="swiper-nav">
-        <a class="swiper-button-prev"> </a>
-        <a class="swiper-button-next"> </a>
+        <a class="swiper-button-prev">
+          <i class="fa-solid fa-caret-left"></i>
+        </a>
+        <a class="swiper-button-next">
+          <i class="fa-solid fa-caret-right"></i>
+        </a>
       </div>
       <section class="front-text">
         <p>...Get The Best Of Media, Recording Studio Services In Nigeria</p>

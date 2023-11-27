@@ -86,6 +86,20 @@ nav .nav_icons,
   display: none;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: white;
+}
+
 .swiper-nav {
   position: absolute;
   width: 100%;
@@ -101,6 +115,12 @@ nav .nav_icons,
 .swiper-nav a {
   color: #fff;
   position: static;
+  font-size: 2rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
 }
 
 .front-text {
@@ -317,14 +337,40 @@ nav .nav_icons,
   margin: 0 auto;
   background-color: #14d914;
 }
+
+/*TABLET VERSION*/
+@media only screen and (max-width: 950px) {
+  #nav {
+    padding-inline: 2.5rem;
+  }
+
+  #nav #logo h3 {
+    font-size: 1.5rem;
+  }
+
+  .swiper-nav {
+    top: 40%;
+  }
+
+  nav .nav-links a {
+    margin-left: 1.25rem;
+    font-size: 0.875rem;
+  }
+}
 /* MOBILE VERSION */
 @media only screen and (max-width: 680px) {
   #nav {
     padding: 1.25rem 1.25rem;
+    flex-direction: column;
+  }
+
+  #nav.active {
+    height: 100vh;
+    background-color: #080808;
   }
 
   #nav #logo h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   #nav #logo img {
@@ -332,15 +378,54 @@ nav .nav_icons,
     height: 1.875rem;
   }
   #nav .nav-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    flex: 0.7;
     display: none;
   }
+
+  #nav.active .nav-links {
+    display: flex;
+  }
+
+  #nav .nav-links a {
+    font-size: 1.5rem;
+  }
+
+  .mobile-nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .mobile-menu-btn {
     display: block;
     font-size: 2rem;
   }
 
+  .bar {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(11.5px);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-11.5px);
+  }
+
   .swiper-nav {
-    top: 20%;
+    top: 25%;
   }
 
   .front-text {
