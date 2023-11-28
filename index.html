@@ -17,8 +17,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,24 +43,36 @@
   <body>
     <header>
       <nav id="nav">
-        <a href="/" id="logo">
-          <h3>Grandstyle</h3>
-        </a>
+        <div class="mobile-nav-wrapper">
+          <a href="/" id="logo">
+            <h3>Grandstyle</h3>
+          </a>
+
+          <div class="mobile-menu-btn">
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
         <div class="nav-links">
           <a href="/" class="active">Home</a>
-          <a href="#about-us">About Us</a>
-          <a href="./Services/services.html">Services</a>
-          <a href="./Discography/discography.html">Discography</a>
-          <a href="#contactUs">Contact Us</a>
-        </div>
-        <div class="mobile-menu-btn">
-          <i class="fa-solid fa-bars"></i>
-          <i class="fa-solid fa-xmark"></i>
+          <a href="#about-us" class="nav-link">About Us</a>
+          <a href="./Services/services.html" class="nav-link">Services</a>
+          <a href="./Discography/discography.html" class="nav-link"
+            >Discography</a
+          >
+          <a href="#contactUs" class="nav-link">Contact Us</a>
         </div>
       </nav>
       <div class="swiper-nav">
-        <a class="swiper-button-prev"> </a>
-        <a class="swiper-button-next"> </a>
+        <a class="swiper-button-prev">
+          <i class="fa-solid fa-caret-left"></i>
+        </a>
+        <a class="swiper-button-next">
+          <i class="fa-solid fa-caret-right"></i>
+        </a>
       </div>
       <section class="front-text">
         <p>...Get The Best Of Media, Recording Studio Services In Nigeria</p>
@@ -100,61 +115,72 @@
         </div>
       </div>
     </header>
-    <div class="about-us" id="about-us">
+    <section class="about-us" id="about-us">
       <div class="about-us-section">
-        <h1>About Us</h1>
-        <p>
-          Grandstyle Entertainment Company is a record label and Media
-          company,<br />
-          whose primary aim is to develop, promote and distribute media content.
-        </p>
+        <div>
+          <h2>About Us</h2>
+          <p class="lower-heading">Get To Know Us</p>
+          <p>
+            Grandstyle Entertainment Company is a record label and Media
+            company, whose primary aim is to develop, promote and distribute
+            media content. The company also provides multimedia (audio,video and
+            photo) services to cooperate organisations, individuals and groups.
+            We have world class facilities to produce audio materials such as
+            Music, voice-over, audio books, radio commercials or jingles, radio
+            programs and anything that has to do with audio. Our video services
+            use only high definition cameras, experienced cameramen, video
+            directors and video editors. We have very good photographers who are
+            dedicated to bringing out beautiful images. Our graphic designers
+            are very competent to bring our clients imagination to reality. We
+            are time and productivity conscious, reasonable time delivery and
+            conscious of clients satisfaction.
+          </p>
+          <a class="about-cta-btn" href="/about/"> More About Us </a>
+        </div>
+        <div class="about-image">
+          <img src="public/assets/about-us.webp" />
+        </div>
       </div>
-      <div class="container">
-        <section class="about">
-          <div class="about-image">
-            <img src="public/assets/about-us.jpg" />
-          </div>
-          <div class="about-content">
-            <h1>What We Do?</h1>
-            <ul>
-              <li>
-                <i class="fa-solid fa-bomb fa-bounce"></i> Music Production/
-                Sound Engineering
-              </li>
-              <p>
-                We have world class facilities to produce audio materials such
-                as Music, voice-over, audio books, radio commercials or jingles,
-                radio programs and anything that has to do with audio..
-              </p>
-              <li>
-                <i class="fa-solid fa-bomb fa-bounce"></i> Video Services/ Music
-                Video
-              </li>
-              <p>
-                Our video services use only high definition cameras, experienced
-                cameramen, video directors and video editors.
-              </p>
-              <li>
-                <i class="fa-solid fa-bomb fa-bounce"></i> Promotion and
-                Production
-              </li>
-              <p>
-                We are time and productivity conscious, reasonable time delivery
-                and conscious of clients satisfaction.
-              </p>
-            </ul>
-            <a href="../grandstyle-Ent/Services/services.html" class="read-more"
-              >Read More</a
-            >
-          </div>
-        </section>
-      </div>
-    </div>
-    <div class="services" id="services">
+    </section>
+    <section class="services" id="services">
+      <div class="text-overlay"></div>
       <div class="services-section">
-        <h1>Our Services</h1>
+        <h2>Our Services</h2>
+        <p class="lower-heading">What We Provide</p>
       </div>
-    </div>
+      <div class="services-content-wrapper">
+        <div class="services-content">
+          <i class="fa-solid fa-music"></i>
+          <h2 class="services-content-heading">
+            Music Production/ Sound Engineering
+          </h2>
+          <p class="services-content-text">
+            We have world class facilities to produce audio materials such as
+            Music, voice-over, audio books, radio commercials or jingles, radio
+            programs and anything that has to do with audio..
+          </p>
+        </div>
+        <div class="services-content">
+          <i class="fa-solid fa-video"></i>
+          <h2 class="services-content-heading">Video Services/ Music Video</h2>
+          <p class="services-content-text">
+            Our video services use only high definition cameras, experienced
+            cameramen, video directors and video editors.
+          </p>
+        </div>
+        <div class="services-content">
+          <i class="fa-solid fa-rectangle-ad"></i>
+          <h2 class="services-content-heading">Promotion and Production</h2>
+          <p class="services-content-text">
+            We are time and productivity conscious, reasonable time delivery and
+            conscious of clients satisfaction.
+          </p>
+        </div>
+      </div>
+      <a class="services-cta-btn" href="/services/">
+        More About Our Services
+      </a>
+    </section>
   </body>
   <script type="module" src="./main.js"></script>
 </html>
