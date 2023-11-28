@@ -224,7 +224,7 @@ nav .nav_icons,
 .about-us-section h2 {
   text-transform: uppercase;
   font-family: 'Permanent Marker';
-  color: #8b0000;
+  color: #343a40;
   font-size: 2rem;
 }
 
@@ -275,7 +275,7 @@ nav .nav_icons,
 }
 
 .about-cta-btn {
-  background-color: #111111;
+  background-color: #343a40;
   font-size: 0.9375rem;
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
@@ -288,10 +288,13 @@ nav .nav_icons,
   width: fit-content;
   margin-top: 2.1875rem;
   text-align: center;
+  border: 2px solid #343a40;
 }
 
-.about-cta-button:hover {
+.about-cta-btn:hover {
+  color: #343a40;
   background-color: transparent;
+  border: 2px solid #343a40;
 }
 
 .about {
@@ -363,6 +366,7 @@ nav .nav_icons,
 
 .services-content-wrapper i {
   font-size: 2rem;
+  color: #ddd;
 }
 
 .services-content {
@@ -370,16 +374,17 @@ nav .nav_icons,
   padding: 1.25rem;
 }
 
-.services-content-wrapper h2 {
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1;
-}
-
 .services-content-wrapper h2,
 .services-content-wrapper p {
   margin-top: 0.9375rem;
   font-family: 'Kanit', sans-serif;
+}
+
+.services-content-wrapper h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 1.875rem;
 }
 
 .services-content-wrapper p {
@@ -538,7 +543,7 @@ nav .nav_icons,
   .about-us-section {
     padding: 0px 20px;
     flex-direction: column;
-    gap: 2.1875rem;
+    gap: 3.125rem;
   }
 
   .about-us-section > div {
@@ -569,6 +574,7 @@ nav .nav_icons,
     font-size: 16px;
     color: #fff;
   }
+
   .about-content ul li {
     font-weight: 400;
   }
@@ -577,8 +583,22 @@ nav .nav_icons,
     padding-right: 3px;
     color: #fff;
   }
+
   .services {
     padding-inline: 1.25rem;
+  }
+
+  .about-cta-btn {
+    margin-top: 0.9375rem;
+  }
+
+  .services-section h2,
+  .services-section p {
+    text-align: left;
+  }
+
+  .services-cta-btn {
+    margin-inline: 0;
   }
 }
 
