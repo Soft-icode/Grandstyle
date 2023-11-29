@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home -Grandstyle</title>
     <link rel="stylesheet" href="core-styles.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+    <noscript>
+      <link rel="stylesheet" href="style.css" />
+    </noscript>
     <link
       rel="preload"
       href="public/fonts/space-grotesk-v16-latin-regular.woff2"
@@ -22,16 +30,6 @@
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -261,6 +259,7 @@
       <img
         src="public/assets/background-image-3.webp"
         decoding="async"
+        loading="lazy"
         alt="Recording Studio In Nigeria"
         srcset="
           public/assets/background-image-3-600.webp   600w,
