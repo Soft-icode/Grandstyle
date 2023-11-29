@@ -4,7 +4,10 @@
   border: 0;
   outline: 0;
   box-sizing: border-box;
-  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -18,6 +21,7 @@ header {
   background-size: cover;
   background-position: center;
   position: relative;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 header::after {
@@ -55,6 +59,7 @@ nav #logo {
   line-height: 12px;
   display: flex;
   gap: 0.625rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 nav #logo h3 {
@@ -421,6 +426,19 @@ section.contact-us {
   padding: 6.25rem 3.125rem;
 }
 
+section.contact-us::after {
+  content: '';
+  background: url('public/assets/p_paint-border-light.png') no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 142px;
+  z-index: 300;
+  left: 0;
+}
+
 section.contact-us > div > * {
   max-width: 50%;
   flex: 0 0 50%;
@@ -548,7 +566,6 @@ section.contact-us > div > div > .contact-us-content > div {
 section.contact-us > div > div > .contact-us-content > div > h3 {
   text-transform: uppercase;
   font-size: 0.875rem;
-  margin-bottom: 0.3125rem;
   color: #dfdfdf;
   font-weight: 800;
 }
@@ -575,6 +592,96 @@ section.contact-us > div > div > .lower-heading {
   background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=fff);
 }
 
+section.blog-preview {
+  padding: 6.25rem 3.125rem;
+  background-color: #f3f3f3;
+}
+
+section.blog-preview > h2 {
+  font-family: 'Permanent Marker', sans-serif;
+  text-transform: uppercase;
+  font-family: 'Permanent Marker';
+  font-size: 2rem;
+}
+
+section.blog-preview > .lower-heading {
+  font-weight: 900;
+  font-size: 3.125rem;
+  color: #fff;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: 2px;
+  line-height: 1;
+  width: fit-content;
+  padding-inline: 1.25rem;
+  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=343a40);
+}
+
+section.blog-preview > .blog-content-wrapper {
+  display: flex;
+  margin-top: 2.1875rem;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+section.blog-preview > .blog-content-wrapper > div {
+  flex: 0 0 33%;
+  max-width: 33%;
+  background-color: #111111;
+  color: #ddd;
+}
+
+section.blog-preview > .blog-content-wrapper > div > .blog-content-text > h3 {
+  font-size: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  color: #f3f3f3;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+section.blog-preview > .blog-content-wrapper > div > .blog-content-text {
+  padding: 0.9375rem;
+  padding-bottom: 1.5625rem;
+}
+
+section.blog-preview > .blog-content-wrapper > div > .blog-content-text > p {
+  font-size: 0.875rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+section.blog-preview > .blog-content-wrapper > div > .blog-content-text > a {
+  display: block;
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+  padding: 0.9375rem 1.875rem;
+  background-color: #212121;
+  color: #fff;
+  width: fit-content;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #fff;
+}
+
+section.blog-preview > .blog-content-wrapper > div > img {
+  width: 100%;
+  height: 12.5rem;
+  object-fit: cover;
+}
+
+.contact-us-cta-btn {
+  display: block;
+  margin-top: 2.1875rem;
+  padding: 0.9375rem 1.875rem;
+  background-color: #111111;
+  color: #fff;
+  width: fit-content;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.contact-us-cta-btn:hover {
+  color: #ddd;
+}
 /*TABLET VERSION*/
 @media only screen and (max-width: 950px) {
   #nav {
@@ -615,6 +722,14 @@ section.contact-us > div > div > .lower-heading {
   section.contact-us > div > * {
     max-width: 100%;
     flex: 0 0 100%;
+  }
+
+  section.blog-preview > .blog-content-wrapper {
+    flex-direction: column;
+  }
+  section.blog-preview > .blog-content-wrapper > div {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 /* MOBILE VERSION */
@@ -773,6 +888,10 @@ section.contact-us > div > div > .lower-heading {
   }
 
   section.contact-us {
+    padding-inline: 1.25rem;
+  }
+
+  section.blog-preview {
     padding-inline: 1.25rem;
   }
 }
