@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home -Grandstyle</title>
     <link rel="stylesheet" href="core-styles.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+    <noscript>
+      <link rel="stylesheet" href="style.css" />
+    </noscript>
     <link
       rel="preload"
       href="public/fonts/space-grotesk-v16-latin-regular.woff2"
@@ -22,16 +30,6 @@
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -261,6 +259,7 @@
       <img
         src="public/assets/background-image-3.webp"
         decoding="async"
+        loading="lazy"
         alt="Recording Studio In Nigeria"
         srcset="
           public/assets/background-image-3-600.webp   600w,
@@ -291,15 +290,11 @@
           />
           <div class="blog-content-text">
             <h3>
-              Begin by setting the stage for the vibrancy of Nigeria's music
-              scene and its historical significance in shaping African music.
+              <a href="">
+                Begin by setting the stage for the vibrancy of Nigeria's music
+                scene and its historical significance in shaping African music.
+              </a>
             </h3>
-
-            <p>
-              Introduction: Nigeria, often referred to as the heartbeat of
-              Africa, pulsates with a rich tapestry of rhythms and melodies that
-              resonate far beyond its borders
-            </p>
 
             <a href="">Read More</a>
           </div>
@@ -320,15 +315,12 @@
           />
           <div class="blog-content-text">
             <h3>
-              Emphasize the critical role of artist development in the success
-              of musicians and the unique approach GrandStyle takes.
+              <a href="">
+                Emphasize the critical role of artist development in the success
+                of musicians and the unique approach GrandStyle takes.
+              </a>
             </h3>
 
-            <p>
-              In the ever-evolving symphony of musical expression, a quiet yet
-              profound revolution is taking center stage — the resurgence of
-              acoustic music.
-            </p>
             <a href="">Read More</a>
           </div>
         </div>
@@ -348,22 +340,32 @@
           />
           <div class="blog-content-text">
             <h3>
-              Introduce the rising trend of acoustic music and its ability to
-              connect artists with their audience on a more intimate level.
+              <a href="">
+                Introduce the rising trend of acoustic music and its ability to
+                connect artists with their audience on a more intimate level.
+              </a>
             </h3>
 
-            <p>
-              In the ever-evolving landscape of musical expression, a gentle but
-              powerful wave has been sweeping through the industry, inviting
-              artists and audiences alike to experience music in its most raw
-              and intimate form.
-            </p>
             <a href="">Read More</a>
           </div>
         </div>
       </div>
-      <a href="" class="contact-us-cta-btn"> Visit Our Blog </a>
+      <a href="" class="visit-blog-cta-btn"> Visit Our Blog </a>
     </section>
+    <footer>
+      <div>
+        <h2>GrandStyle Ent.</h2>
+        <p>Get The Best Of Video Production And Music Now</p>
+      </div>
+      <div>
+        <h2>Useful Links</h2>
+        <p>Our Blog</p>
+      </div>
+      <div>
+        <h2>Reach Out</h2>
+        <a></a>
+      </div>
+    </footer>
   </body>
   <script type="module" src="./main.js"></script>
 </html>
