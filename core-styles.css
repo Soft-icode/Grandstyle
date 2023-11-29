@@ -408,6 +408,10 @@ nav .nav_icons,
     margin-left: 1.25rem;
     font-size: 0.875rem;
   }
+
+  .front-text h1 {
+    font-size: 2.1875rem;
+  }
 }
 
 /* MOBILE VERSION */
