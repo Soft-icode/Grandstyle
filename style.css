@@ -393,7 +393,6 @@ section.blog-preview > .blog-content-wrapper > div {
   flex: 0 0 33%;
   max-width: 33%;
   background-color: #111111;
-  color: #ddd;
   overflow: hidden;
   position: relative;
 }
@@ -401,9 +400,11 @@ section.blog-preview > .blog-content-wrapper > div {
 section.blog-preview > .blog-content-wrapper > div > .blog-content-text > h3 {
   font-size: 0.9375rem;
   margin-bottom: 0.625rem;
-  color: #ddd;
+  color: #fff;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.4;
 }
 
 section.blog-preview
@@ -470,27 +471,48 @@ section.blog-preview > .blog-content-wrapper > div > img:hover {
 footer {
   background-color: #212121;
   padding: 6.25rem 3.125rem;
+  padding-bottom: 1.25rem;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+footer > div {
+  max-width: 33%;
+  flex: 0 0 33%;
+}
+
+footer > div > h2 {
+  font-size: 1rem;
+  margin-bottom: 0.9375rem;
+}
+
+footer > div > p {
+  font-size: 0.875rem;
+}
+
+footer > div > a {
+  font-size: 0.875rem;
+  display: block;
+  margin-bottom: 0.625rem;
+}
+
+footer > .social-icons-links > div {
+  display: flex;
+  gap: 0.625rem;
+  align-items: flex-start;
+}
+
+footer > .social-icons-links > div > .social-icons-link {
+  padding: 0.625rem 0.9375rem;
+  border: 1px solid #ddd;
+  width: fit-content;
+  display: inline-block;
 }
 /*TABLET VERSION*/
 @media only screen and (max-width: 950px) {
-  #nav {
-    padding-inline: 2.5rem;
-  }
-
-  #nav #logo h3 {
-    font-size: 1.5rem;
-  }
-
-  .swiper-nav {
-    top: 40%;
-  }
-
-  nav .nav-links a {
-    margin-left: 1.25rem;
-    font-size: 0.875rem;
-  }
-
   .about-us-section .about-image {
     height: auto;
   }
@@ -521,101 +543,19 @@ footer {
     flex: 0 0 100%;
     max-width: 100%;
   }
+
+  footer {
+    padding-inline: 1.25rem;
+    gap: 1.875rem;
+  }
+
+  footer > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 /* MOBILE VERSION */
 @media only screen and (max-width: 680px) {
-  #nav {
-    padding: 1.25rem 1.25rem;
-    flex-direction: column;
-  }
-
-  #nav.active {
-    height: 100vh;
-    background-color: #22272d;
-  }
-
-  #nav #logo h3 {
-    font-size: 1.5rem;
-  }
-
-  #nav #logo img {
-    width: 2.5rem;
-    height: 1.875rem;
-  }
-  #nav .nav-links {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1.25rem;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    flex: 0.7;
-    display: none;
-  }
-
-  #nav.active .nav-links {
-    display: flex;
-  }
-
-  #nav .nav-links a {
-    font-size: 1.5rem;
-  }
-
-  .mobile-nav-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .mobile-menu-btn {
-    display: block;
-    font-size: 2rem;
-  }
-
-  .bar {
-    display: block;
-  }
-  .hamburger {
-    display: block;
-  }
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    transform: rotate(45deg) translateY(11.5px);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translateY(-11.5px);
-  }
-
-  .swiper-nav {
-    top: 25%;
-    display: none;
-  }
-
-  .front-text {
-    padding-inline: 0.625rem;
-    top: 35%;
-  }
-
-  .front-text h1 {
-    font-size: 1.75rem;
-  }
-
-  .front-text p {
-    font-size: 1.125rem;
-  }
-
-  .header-cta-buttons > a {
-    display: block;
-  }
-
-  .header-cta-buttons .cta-btn-outlined {
-    margin: 0;
-    margin-top: 0.9375rem;
-  }
-
   .about-us-section {
     padding: 0px 20px;
     flex-direction: column;
