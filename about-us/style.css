@@ -175,13 +175,6 @@ footer > .social-icons-links > div > .social-icons-link {
   }
 }
 
-/*SMALLER PHONES */
-@media screen and (max-width: 320px) {
-  header::after {
-    display: none;
-  }
-}
-
 /* PHONES ON LANDSCAPE MODE */
 @media (orientation: landscape) and (hover: none) and (pointer: coarse) {
   header {
