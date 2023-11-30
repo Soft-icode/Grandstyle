@@ -1,0 +1,246 @@
+section.contact-us {
+  position: relative;
+  background-color: #111111;
+  padding: 6.25rem 3.125rem;
+}
+
+section.contact-us::after {
+  content: '';
+  background: url('public/assets/p_paint-border-light.png') no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 142px;
+  z-index: 300;
+  left: 0;
+}
+
+section.contact-us > div > * {
+  max-width: 50%;
+  flex: 0 0 50%;
+}
+
+section.contact-us > div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+  align-items: center;
+}
+
+section.contact-us > div > form {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+section.contact-us > div > form > .extra-form-info {
+  font-size: 1rem;
+  font-family: 'Permanent Marker', sans-serif;
+  color: #ddd;
+  max-width: 100%;
+  flex: 0 0 100%;
+  padding-bottom: 0.625rem;
+}
+
+section.contact-us > div > form > div > input,
+section.contact-us > div > form > div > textarea {
+  font-size: 1rem;
+  background-color: #212121;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding: 1rem;
+  width: 100%;
+  color: #dee2e6;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+section.contact-us > div > form > div > input:focus,
+section.contact-us > div > form > div > textarea:focus {
+  border-color: #bebcbc;
+}
+
+section.contact-us > div > form > div {
+  max-width: 50%;
+  flex: 0 0 50%;
+  padding-inline: 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+
+section.contact-us > div > form > .message-textarea-wrapper {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+section.contact-us > div > form > .message-btn-wrapper {
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+
+section.contact-us > div > form > .message-btn-wrapper > button {
+  padding: 0.9375rem 1.875rem;
+  border: none;
+  color: #fff;
+  background-color: #c74334;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+section.contact-us > div > form > .message-btn-wrapper > button:hover {
+  cursor: pointer;
+  color: #ddd;
+}
+
+section.contact-us > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+section.contact-us > div > div {
+  color: #fff;
+  background-color: #111111;
+  padding: 1.25rem 0.9375rem;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Kanit', sans-serif;
+}
+
+section.contact-us > div > div > .contact-us-content > div {
+  margin-bottom: 0.9375rem;
+}
+
+section.contact-us > div > div > .contact-us-content > div > h3 {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: #dfdfdf;
+  font-weight: 800;
+}
+
+section.contact-us > div > div > h2 {
+  font-family: 'Permanent Marker', sans-serif;
+  text-transform: uppercase;
+  font-family: 'Permanent Marker';
+  font-size: 2rem;
+  color: #fff;
+}
+
+section.contact-us > div > div > .lower-heading {
+  font-weight: 900;
+  font-size: 3.125rem;
+  color: #343a40;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: 2px;
+  line-height: 1;
+  width: fit-content;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=fff);
+}
+
+.embedded-location-container {
+  width: 100%;
+  height: 31.25rem;
+}
+
+footer {
+  background-color: #212121;
+  padding: 6.25rem 3.125rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+footer > div {
+  max-width: 33%;
+  flex: 0 0 33%;
+}
+
+footer > div > h2 {
+  font-size: 1rem;
+  margin-bottom: 0.9375rem;
+}
+
+footer > div > p {
+  font-size: 0.875rem;
+}
+
+footer > div > a {
+  font-size: 0.875rem;
+  display: block;
+  margin-bottom: 0.625rem;
+}
+
+footer > .social-icons-links > div {
+  display: flex;
+  gap: 0.625rem;
+  align-items: flex-start;
+}
+
+footer > .social-icons-links > div > .social-icons-link {
+  padding: 0.625rem 0.9375rem;
+  border: 1px solid #ddd;
+  width: fit-content;
+  display: inline-block;
+}
+
+/*TABLET VERSION*/
+@media only screen and (max-width: 950px) {
+  .about-us-section .about-image {
+    height: auto;
+  }
+  footer {
+    padding-inline: 1.25rem;
+    gap: 1.875rem;
+  }
+
+  footer > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  section.contact-us > div {
+    flex-direction: column;
+    gap: 2.1875rem;
+  }
+
+  section.contact-us > div > * {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 680px) {
+  section.contact-us {
+    padding-inline: 1.25rem;
+  }
+}
+
+/*SMALLER PHONES */
+@media screen and (max-width: 320px) {
+  header::after {
+    display: none;
+  }
+}
+
+/* PHONES ON LANDSCAPE MODE */
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  header {
+    height: 50rem;
+  }
+}
