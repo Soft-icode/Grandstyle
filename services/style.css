@@ -1,0 +1,150 @@
+.services {
+  width: 100%;
+  padding-inline: 3.125rem;
+  position: relative;
+  padding-block: 6.25rem;
+  background-color: #212121;
+}
+
+.services .text-overlay {
+  background: url('public/assets/liquifer.png');
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.05;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.services-section {
+  text-align: center;
+}
+.services-section h2 {
+  text-transform: uppercase;
+  font-family: 'Permanent Marker';
+  color: #fff;
+  font-size: 2rem;
+}
+
+.services-section .lower-heading {
+  font-weight: 900;
+  font-size: 3.125rem;
+  color: #343a40;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: 2px;
+  line-height: 1;
+  width: fit-content;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=fff);
+}
+
+.services-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  margin-top: 2.1875rem;
+  gap: 0.9375rem;
+  flex-wrap: wrap;
+}
+.services-content-wrapper > div {
+  max-width: 33%;
+  flex: 0.333333%;
+}
+
+.services-content-wrapper i {
+  font-size: 2rem;
+  color: #ddd;
+}
+
+.services-content {
+  background-color: #343a40;
+  padding: 1.25rem;
+}
+
+.services-content-wrapper h2,
+.services-content-wrapper p {
+  margin-top: 0.9375rem;
+  font-family: 'Kanit', sans-serif;
+}
+
+.services-content-wrapper h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 1.875rem;
+}
+
+.services-content-wrapper p {
+  line-height: 1.5556em;
+  color: #ddd;
+}
+
+footer {
+  background-color: #212121;
+  padding: 6.25rem 3.125rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+footer > div {
+  max-width: 33%;
+  flex: 0 0 33%;
+}
+
+footer > div > h2 {
+  font-size: 1rem;
+  margin-bottom: 0.9375rem;
+}
+
+footer > div > p {
+  font-size: 0.875rem;
+}
+
+footer > div > a {
+  font-size: 0.875rem;
+  display: block;
+  margin-bottom: 0.625rem;
+}
+
+footer > .social-icons-links > div {
+  display: flex;
+  gap: 0.625rem;
+  align-items: flex-start;
+}
+
+footer > .social-icons-links > div > .social-icons-link {
+  padding: 0.625rem 0.9375rem;
+  border: 1px solid #ddd;
+  width: fit-content;
+  display: inline-block;
+}
+
+/*TABLET VERSION*/
+@media only screen and (max-width: 950px) {
+  .services-content-wrapper {
+    flex-direction: column;
+  }
+
+  .services-content-wrapper > div {
+    max-width: 100%;
+    flex: 1;
+  }
+
+  footer {
+    padding-inline: 1.25rem;
+    gap: 1.875rem;
+  }
+
+  footer > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
